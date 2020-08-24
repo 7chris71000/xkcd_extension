@@ -1,11 +1,22 @@
 <head>
+	<link rel="stylesheet" href="comic_popup.css">
+
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 	<script src="comic_popup.js"></script>
 </head>
 <body>
-	<div>
-		<h1 id='comicTitle'>Comic</h1>
-		<p id='date'></p>
-		<button id='newComicButton'>New Comic</button>
-		<img id='comic' src=''/>
+	<div class="container">
+		<div class="title-container">
+			<h1 id="comicTitle"></h1>
+			<p id="date"></p>
+		</div>
+		<div class="button-container">
+			<button id="newComicButton" class="new-comic-button">
+				<i class="fa fa-random" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="image-container">
+			<img id="comic" src=""/>
+		</div>
 	</div>
 </body>

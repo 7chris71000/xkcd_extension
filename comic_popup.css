@@ -1,0 +1,27 @@
+
+.container .title-container {
+    display: flex;
+    width: max-content;
+}
+
+.container .title-container p {
+    margin: 10px 0 0 0;
+}
+
+.container .button-container {
+    width: 100%;
+}
+
+.container .image-container {
+    text-align: center;
+}
+
+.container .new-comic-button {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+h1 {
+    margin: 0 10px 0 0;
+}
+
