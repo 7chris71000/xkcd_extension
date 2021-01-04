@@ -16,8 +16,8 @@
     text-align: center;
 }
 
-.container .new-comic-button {
-    font-size: 1.5rem;
+.container .comic-button {
+    font-size: 1rem;
     margin: 10px 0;
 }
 

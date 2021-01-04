@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	var comicImage = document.getElementById("comic");
 	var comicTitle = document.getElementById("comicTitle");
 	var randomComicButton = document.getElementById("newComicButton");
+	var forwardComicButton = document.getElementById("forwardComicButton");
+	var backComicButton = document.getElementById("backComicButton");
 	var date = document.getElementById("date");
 	
 	let totalComics;
@@ -20,6 +22,26 @@ document.addEventListener("DOMContentLoaded", () => {
 			comicTitle.textContent = obj.title;
 			date.textContent = `${obj.year}-${obj.month}-${obj.day}`;
 		});
+	});
+
+	forwardComicButton.addEventListener("click", () => {
+		getComicInfo(totalComics + 1).then(obj => {
+			comicImage.src = obj.img;
+			comicTitle.textContent = obj.title;
+			date.textContent = `${obj.year}-${obj.month}-${obj.day}`;
+		});
+
+		totalComics++;
+	});
+
+	backComicButton.addEventListener("click", () => {
+		getComicInfo(totalComics - 1).then(obj => {
+			comicImage.src = obj.img;
+			comicTitle.textContent = obj.title;
+			date.textContent = `${obj.year}-${obj.month}-${obj.day}`;
+		});
+
+		totalComics--;
 	});
 });
 
